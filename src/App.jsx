@@ -1,4 +1,4 @@
-import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/Layout/navbar";
 import Hero from "./components/section/Hero";
 import Official from "./components/section/official";
 import Counter from "./components/section/counter";
