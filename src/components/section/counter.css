@@ -1,0 +1,115 @@
+.counter-wrapper {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #ffffff 65%, #f3e8ff 100%);
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(236, 236, 242, 0.85);
+  border-radius: 40px;
+  padding: 28px 40px;
+  box-shadow: 0 15px 45px rgba(99, 102, 241, 0.15);
+}
+
+.counter-col {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.counter-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.counter-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+}
+
+.counter-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-value {
+  font-size: 26px;
+  font-weight: 800;
+  color: #14142b;
+  letter-spacing: -0.5px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.counter-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b6b80;
+  margin: 4px 0 0;
+  white-space: nowrap;
+}
+
+.counter-divider {
+  width: 1px;
+  height: 42px;
+  background: rgba(20, 20, 43, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .counter-card {
+    justify-content: center;
+    padding: 26px;
+  }
+
+  .counter-col {
+    flex: 1 1 45%;
+    justify-content: center;
+  }
+
+  .counter-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-card {
+    padding: 22px;
+    gap: 20px;
+  }
+
+  .counter-col {
+    flex: 1 1 100%;
+    justify-content: flex-start;
+  }
+
+  .counter-value {
+    font-size: 22px;
+  }
+
+  .counter-label {
+    font-size: 12px;
+  }
+}

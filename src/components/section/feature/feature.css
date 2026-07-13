@@ -1,0 +1,378 @@
+/* ---- Layout shell ---- */
+.uds-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.uds-card {
+  width: 100%;
+  max-width: 1152px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 20px 45px -20px rgba(30, 41, 59, 0.18);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .uds-card {
+    flex-direction: column;
+  }
+}
+
+/* ---- Sidebar ---- */
+.uds-nav {
+  width: 256px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-right: 1px solid #f1f5f9;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .uds-nav {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #f1f5f9;
+  }
+}
+
+.uds-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .uds-nav-list {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+}
+
+.uds-nav-item {
+  flex-shrink: 0;
+}
+
+.uds-nav-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 12px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.uds-nav-button:hover {
+  background: #f8fafc;
+  color: #334155;
+}
+
+.uds-nav-button.is-active {
+  background: linear-gradient(to right, #ecfeff, rgba(236, 254, 255, 0.4));
+  color: #0e7490;
+  box-shadow: inset 0 0 0 1px #cffafe;
+}
+
+.uds-nav-icon-wrap {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  color: #94a3b8;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.uds-nav-button.is-active .uds-nav-icon-wrap {
+  background: #06b6d4;
+  color: #ffffff;
+}
+
+.uds-nav-label {
+  flex: 1;
+  text-align: left;
+}
+
+.uds-nav-arrow {
+  flex-shrink: 0;
+  color: #cbd5e1;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.uds-nav-button.is-active .uds-nav-arrow {
+  color: #06b6d4;
+  transform: translateX(2px);
+}
+
+/* ---- Content area ---- */
+.uds-content {
+  flex: 1;
+  min-width: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .uds-content {
+    padding: 1.75rem;
+  }
+}
+
+/* ---- Preview panel ---- */
+.uds-preview {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #06b6d4 0%, #06b6d4 55%, #2dd4bf 100%);
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .uds-preview {
+    padding: 1.75rem;
+  }
+}
+
+.uds-preview-title {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  font-size: 1.125rem;
+  margin: 0 0 1.25rem 0;
+}
+
+.uds-preview-inner {
+  background: rgba(6, 182, 212, 0.12);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+/* ---- Copy block ---- */
+.uds-heading {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.uds-divider {
+  height: 4px;
+  width: 56px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #06b6d4, #818cf8);
+  margin-bottom: 1rem;
+}
+
+.uds-copy {
+  color: #64748b;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* ---- Dashboard stat grid mock ---- */
+.uds-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.uds-stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+.uds-stat-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uds-stat-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1;
+}
+
+.uds-stat-label {
+  font-size: 0.625rem;
+  color: #94a3b8;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* ---- Shared card list mocks (list / toggles / roles) ---- */
+.uds-mock-list {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.uds-mock-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  gap: 0.75rem;
+}
+
+.uds-mock-row:last-child {
+  border-bottom: none;
+}
+
+.uds-row-name {
+  font-size: 0.875rem;
+  color: #334155;
+  font-weight: 500;
+}
+
+.uds-row-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* status color variants */
+.uds-tone-emerald { color: #059669; background: #ecfdf5; }
+.uds-tone-amber   { color: #d97706; background: #fffbeb; }
+.uds-tone-indigo  { color: #4f46e5; background: #eef2ff; }
+.uds-tone-slate   { color: #64748b; background: #f1f5f9; }
+.uds-tone-red     { color: #dc2626; background: #fef2f2; }
+
+/* toggle switch */
+.uds-toggle {
+  width: 36px;
+  height: 20px;
+  border-radius: 999px;
+  position: relative;
+  flex-shrink: 0;
+  background: #e2e8f0;
+  transition: background 0.15s ease;
+}
+
+.uds-toggle.is-on {
+  background: #06b6d4;
+}
+
+.uds-toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.25);
+  transition: left 0.15s ease;
+}
+
+.uds-toggle.is-on .uds-toggle-knob {
+  left: 18px;
+}
+
+/* roles mock */
+.uds-role-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #ecfeff;
+  color: #0891b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.uds-role-name {
+  font-size: 0.875rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.uds-role-perms {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* bars mock */
+.uds-bars {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+}
+
+.uds-bar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.uds-bar-track {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.uds-bar-fill {
+  width: 100%;
+  max-width: 28px;
+  border-radius: 6px 6px 0 0;
+  background: linear-gradient(to top, #06b6d4, #2dd4bf);
+}
+
+.uds-bar-label {
+  font-size: 0.6875rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
