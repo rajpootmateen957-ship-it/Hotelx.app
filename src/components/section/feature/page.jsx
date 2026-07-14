@@ -64,7 +64,7 @@ const SECTIONS = [
     label: "Room Booking",
     icon: CalendarCheck,
     heading: "Room Booking, Start to Finish",
-    copy: "See every room's status at a glance and confirm a stay in a few clicks. Rates, availability, and guest details stay in sync the moment a booking is made.",
+    copy: "Handle guest arrivals, room assignments, keys, and sudden split-billing upgrades in seconds through an intuitive, visual drag-and-drop room matrix.",
     mockType: "list",
     rows: [
       { name: "Room 204 · Deluxe King", status: "Confirmed", tone: "uds-tone-emerald" },
@@ -78,7 +78,7 @@ const SECTIONS = [
     label: "Room Maintenance",
     icon: Wrench,
     heading: "Room Maintenance, Tracked",
-    copy: "Log issues the moment they're spotted and route them to the right technician. A room stays off the booking list until it's actually ready.",
+    copy: "Empower your cleaning and maintenance crews with mobile alerts. The moment a room is marked clean, the front desk is instantly cleared to check in the next arrival.",
     mockType: "list",
     rows: [
       { name: "Room 214 · AC unit noise", status: "In Progress", tone: "uds-tone-amber" },
@@ -92,7 +92,7 @@ const SECTIONS = [
     label: "Configuration Menu",
     icon: SlidersHorizontal,
     heading: "One Menu, Every Setting",
-    copy: "Room types, tax rules, seasonal rates, and property details all live under one configuration menu, so nothing is buried three screens deep.",
+    copy: "Configure hotel rooms, floors, amenities, taxes, services, and system settings from one place.",
     mockType: "toggles",
     rows: [
       { name: "Seasonal pricing", on: true },
@@ -106,7 +106,7 @@ const SECTIONS = [
     label: "User Access",
     icon: ShieldCheck,
     heading: "Access, Scoped by Role",
-    copy: "Give front desk, housekeeping, and management exactly the permissions they need, no more and no less, and see who changed what.",
+    copy: "Control employee permissions and secure sensitive hotel operations using role-based access.",
     mockType: "roles",
     rows: [
       { name: "Front Desk", perms: "Bookings · Check-in/out", icon: UserCog },
@@ -119,7 +119,7 @@ const SECTIONS = [
     label: "Configuration",
     icon: Settings2,
     heading: "Configured Around Your Property",
-    copy: "Set currency, business hours, invoice templates, and integrations once. Every module downstream inherits the same source of truth.",
+    copy: "Control employee permissions and secure sensitive hotel operations using role-based access.",
     mockType: "toggles",
     rows: [
       { name: "Default currency: USD", on: true },
@@ -133,7 +133,7 @@ const SECTIONS = [
     label: "Reports",
     icon: FileBarChart,
     heading: "Reports That Answer Questions",
-    copy: "Occupancy, revenue, and staff performance, built from the same live data as your dashboard, exportable whenever leadership asks.",
+    copy: "Generate occupancy, booking, financial, and operational reports to make smarter business decisions.",
     mockType: "bars",
     rows: [
       { name: "Mon", value: 40 },
@@ -149,7 +149,7 @@ const SECTIONS = [
     label: "Product",
     icon: Package,
     heading: "Every Product, One Catalog",
-    copy: "Minibar snacks, spa add-ons, and restaurant items live in a single catalog, so stock levels and pricing never drift between departments.",
+    copy: "Manage restaurant items, minibar products, hotel amenities, pricing, and stock from one inventory system.",
     mockType: "list",
     rows: [
       { name: "Minibar — Sparkling water", status: "In stock", tone: "uds-tone-emerald" },
@@ -163,7 +163,7 @@ const SECTIONS = [
     label: "Vendor",
     icon: Truck,
     heading: "Vendors, Kept in One Place",
-    copy: "Track every supplier relationship, purchase orders, delivery schedules, and payment terms, without digging through email threads.",
+    copy: "Upsell high-margin add-ons natively. Track vehicle availability, driver dispatches, fuel logs, and client billing directly inside your master calendar.",
     mockType: "roles",
     rows: [
       { name: "Fresh Farm Co.", perms: "Produce · Weekly delivery", icon: Truck },
@@ -176,7 +176,7 @@ const SECTIONS = [
     label: "Manufacturers",
     icon: Factory,
     heading: "Manufacturer Details on File",
-    copy: "Keep warranty terms, contact info, and equipment documentation attached to every manufacturer, ready when maintenance needs it.",
+    copy: "Store manufacturer details for hotel assets, equipment, furniture, appliances, and vehicles.",
     mockType: "roles",
     rows: [
       { name: "Carrier HVAC", perms: "12 units · Under warranty", icon: Factory },
@@ -189,7 +189,7 @@ const SECTIONS = [
     label: "Maintenance Team",
     icon: ClipboardList,
     heading: "The Team Behind Every Fix",
-    copy: "Assign tickets to the right technician based on skill and availability, and watch turnaround times improve as workload balances itself.",
+    copy: "Organize maintenance staff, assign work orders, and monitor task completion across the property.",
     mockType: "list",
     rows: [
       { name: "Ahmed R. — Electrical", status: "On duty", tone: "uds-tone-emerald" },

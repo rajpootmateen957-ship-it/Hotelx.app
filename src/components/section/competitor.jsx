@@ -51,7 +51,7 @@ const Competitor = () => {
       <div className="competitor-header">
         <h2 className="competitor-heading">
           <span className="competitor-heading-gradient">One software</span>{" "}
-          <span className="competitor-heading-dark">All needs</span>
+          <span className="competitor-heading-dark"> For All Needs</span>
         </h2>
         <p className="competitor-description">
           A cleaner, smarter hotel management system built for modern hotel

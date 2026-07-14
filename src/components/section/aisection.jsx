@@ -82,7 +82,7 @@ const AiSection = () => {
       <div className="ai-section-header">
         <h2 className="ai-section-heading">
           <span className="ai-heading-dark">
-            ASmart Hospitality: AI-Driven
+            A Smart Hospitality: AI-Driven
           </span>
           <br />
           <span className="ai-heading-gradient">Hotel Operations</span>

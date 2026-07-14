@@ -16,9 +16,6 @@
   max-width: 720px;
   margin: 0 auto 3.5rem auto;
   text-align: center;
-  opacity: 0;
-  transform: translateY(16px);
-  animation: pricing-rise 0.7s ease forwards;
 }
 
 .pricing-title {
@@ -49,8 +46,26 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 1.75rem;
-  align-items: start;
+  align-items: stretch;
+}
+
+/* Hard reset: guarantees no card ever gets a special border, glow,
+   or scale even if an old .is-popular rule is still cached/loaded
+   somewhere else in the project. */
+.pricing-card,
+.pricing-card.is-popular {
+  transform: none !important;
+  border-color: #e7edf3 !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+}
+
+.pricing-card:hover,
+.pricing-card.is-popular:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 44px -20px rgba(15, 23, 42, 0.18) !important;
+  border-color: #e0e7ff !important;
 }
 
 @media (max-width: 980px) {
@@ -60,67 +75,26 @@
   }
 }
 
-/* ==== Card ==== */
+/* ==== Card ====
+   All three cards share identical background, border, shadow and sizing.
+   No card gets a pre-highlighted / "already selected" treatment. */
 .pricing-card {
   position: relative;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  height: 100%;
+  background: #ffffff;
   border-radius: 24px;
   border: 1px solid #e7edf3;
   padding: 2rem 1.85rem 2.25rem;
   display: flex;
   flex-direction: column;
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
-  opacity: 0;
-  transform: translateY(24px);
-  animation: pricing-rise 0.7s ease forwards;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
-.pricing-card:nth-child(1) { animation-delay: 0.05s; }
-.pricing-card:nth-child(2) { animation-delay: 0.15s; }
-.pricing-card:nth-child(3) { animation-delay: 0.25s; }
 
 .pricing-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 24px 48px -20px rgba(15, 23, 42, 0.18);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 44px -20px rgba(15, 23, 42, 0.18);
   border-color: #e0e7ff;
-}
-
-.pricing-card.is-popular {
-  background: linear-gradient(180deg, #ffffff 0%, #f4f0ff 100%);
-  border: 1px solid #ddd6fe;
-  box-shadow: 0 20px 45px -18px rgba(99, 102, 241, 0.35);
-  transform: translateY(-10px) scale(1.02);
-  z-index: 1;
-}
-
-.pricing-card.is-popular:hover {
-  transform: translateY(-16px) scale(1.02);
-  box-shadow: 0 28px 55px -18px rgba(99, 102, 241, 0.45);
-}
-
-@media (max-width: 980px) {
-  .pricing-card.is-popular {
-    transform: translateY(0) scale(1);
-  }
-  .pricing-card.is-popular:hover {
-    transform: translateY(-8px) scale(1);
-  }
-}
-
-/* glow ring behind popular card */
-.pricing-card.is-popular::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: 24px;
-  padding: 1px;
-  background: linear-gradient(135deg, #6366f1, #a855f7);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0.7;
-  pointer-events: none;
 }
 
 /* ==== Card top row: icon + badge ==== */
@@ -140,12 +114,8 @@
   justify-content: center;
   color: #ffffff;
   background: linear-gradient(135deg, #6366f1, #a855f7);
-  box-shadow: 0 8px 18px -6px rgba(99, 102, 241, 0.45);
-  transition: transform 0.35s ease;
-}
-
-.pricing-card:hover .pricing-icon {
-  transform: rotate(-6deg) scale(1.05);
+  box-shadow: 0 8px 18px -6px rgba(99, 102, 241, 0.4);
+  flex-shrink: 0;
 }
 
 .pricing-badge {
@@ -157,12 +127,6 @@
   padding: 0.4rem 0.85rem;
   border-radius: 999px;
   white-space: nowrap;
-}
-
-.pricing-card.is-popular .pricing-badge {
-  color: #ffffff;
-  background: linear-gradient(90deg, #6366f1, #a855f7);
-  border-color: transparent;
 }
 
 /* ==== Price block ==== */
@@ -199,6 +163,9 @@
   font-weight: 700;
   color: #0f172a;
   margin: 0 0 0.6rem 0;
+  min-height: 2.6rem;
+  display: flex;
+  align-items: center;
 }
 
 .pricing-desc {
@@ -206,10 +173,15 @@
   color: #64748b;
   line-height: 1.55;
   margin: 0 0 1.75rem 0;
-  min-height: 4.7em;
+  height: 4.65rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
-/* ==== CTA button ==== */
+/* ==== CTA button ====
+   Identical gradient style on every card - no card looks "already chosen". */
 .pricing-cta {
   display: flex;
   align-items: center;
@@ -223,25 +195,14 @@
   border: none;
   cursor: pointer;
   color: #ffffff;
-  background: #0f172a;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  box-shadow: 0 10px 22px -10px rgba(99, 102, 241, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .pricing-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.35);
-}
-
-.pricing-cta.is-gradient {
-  background: linear-gradient(90deg, #6366f1, #a855f7);
-  background-size: 160% 100%;
-  background-position: 0% 0%;
-}
-
-.pricing-cta.is-gradient:hover {
-  background-position: 100% 0%;
-  box-shadow: 0 14px 28px -8px rgba(99, 102, 241, 0.45);
+  box-shadow: 0 14px 28px -10px rgba(99, 102, 241, 0.6);
 }
 
 .pricing-cta-arrow {
@@ -261,6 +222,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex: 1;
 }
 
 .pricing-feature {
@@ -271,9 +233,6 @@
   font-weight: 600;
   color: #334155;
   line-height: 1.45;
-  opacity: 0;
-  transform: translateX(-8px);
-  animation: pricing-feature-in 0.5s ease forwards;
 }
 
 .pricing-feature-check {
@@ -287,47 +246,6 @@
   color: #10b981;
   background: #ecfdf5;
   margin-top: 0.05rem;
-}
-
-/* ==== Keyframes ==== */
-@keyframes pricing-rise {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pricing-feature-in {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* stagger features within each card */
-.pricing-feature:nth-child(1) { animation-delay: 0.05s; }
-.pricing-feature:nth-child(2) { animation-delay: 0.12s; }
-.pricing-feature:nth-child(3) { animation-delay: 0.19s; }
-.pricing-feature:nth-child(4) { animation-delay: 0.26s; }
-.pricing-feature:nth-child(5) { animation-delay: 0.33s; }
-.pricing-feature:nth-child(6) { animation-delay: 0.4s; }
-
-/* ==== Reduced motion ==== */
-@media (prefers-reduced-motion: reduce) {
-  .pricing-header,
-  .pricing-card,
-  .pricing-feature {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-  .pricing-card:hover,
-  .pricing-card.is-popular:hover {
-    transform: none;
-  }
-  .pricing-cta:hover {
-    transform: none;
-  }
 }
 
 /* ==== Small screens fine-tuning ==== */
