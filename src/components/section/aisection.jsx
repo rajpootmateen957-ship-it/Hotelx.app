@@ -4,7 +4,6 @@ import {
   TrendingUp,
   Users,
   CalendarCheck,
-  Briefcase,
 } from "lucide-react";
 import "./aisection.css";
 
@@ -32,12 +31,6 @@ const cards = [
     title: "AI Booking Analysis",
     description:
       "Handle up to 75% of routine guest requests — like room service orders, Wi-Fi passwords, and late checkout inquiries — instantly in multiple languages without bothering your front desk.",
-  },
-  {
-    icon: Briefcase,
-    title: "AI Hotel Assistant",
-    description:
-      "Ask natural-language questions about rooms, guests, payments, reports, and operations.",
   },
 ];
 

@@ -30,8 +30,10 @@
   margin-bottom: 24px;
 }
 
+/* Matches the same responsive clamp() pattern used for
+   .pricing-title / .faq-title / .contact-title across the site */
 .hero-heading {
-  font-size: 44px;
+  font-size: clamp(2rem, 4.2vw, 3rem);
   font-weight: 800;
   line-height: 1.15;
   color: #14142b;
@@ -56,7 +58,7 @@
 
 .hero-actions {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 14px;
   flex-wrap: wrap;
 }
@@ -64,10 +66,14 @@
 .hero-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 14px 26px;
   font-size: 15px;
   border-radius: 30px;
+  min-height: 52px;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .hero-btn-arrow {
@@ -172,10 +178,6 @@
     flex-direction: column;
   }
 
-  .hero-heading {
-    font-size: 34px;
-  }
-
   .hero-description {
     max-width: 100%;
   }
@@ -185,11 +187,10 @@
   }
 }
 
-@media (max-width: 480px) {
-  .hero-heading {
-    font-size: 28px;
-  }
-
+/* Stack the buttons before the longer label has a chance to wrap
+   onto two lines while the other button stays on one line - that
+   mismatch is what was causing the uneven button heights. */
+@media (max-width: 640px) {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
@@ -197,5 +198,13 @@
 
   .hero-btn {
     justify-content: center;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-btn {
+    font-size: 14px;
+    padding: 13px 20px;
   }
 }
