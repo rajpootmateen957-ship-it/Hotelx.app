@@ -1,5 +1,4 @@
 import "./navbar.css";
-
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Features", href: "#features" },

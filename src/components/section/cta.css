@@ -40,8 +40,8 @@
 
 .cta-badge {
   display: inline-block;
-  background: #e0f7ff;
-  color: #0891b2;
+  background: #eef0ff;
+  color: #6366f1;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -63,7 +63,7 @@
 }
 
 .cta-heading-gradient {
-  background: linear-gradient(100deg, #22c1e0, #6366f1, #a855f7);
+  background: linear-gradient(90deg, #6366f1, #a855f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -120,7 +120,7 @@
 }
 
 .cta-btn-filled {
-  background: linear-gradient(90deg, #22c1e0, #6366f1);
+  background: linear-gradient(90deg, #6366f1, #a855f7);
   color: #ffffff;
   border: 1.5px solid transparent;
   box-shadow: 0 10px 24px rgba(99, 102, 241, 0.35);

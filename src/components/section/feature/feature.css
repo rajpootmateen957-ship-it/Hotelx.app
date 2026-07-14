@@ -89,9 +89,9 @@
 }
 
 .uds-nav-button.is-active {
-  background: linear-gradient(to right, #ecfeff, rgba(236, 254, 255, 0.4));
-  color: #0e7490;
-  box-shadow: inset 0 0 0 1px #cffafe;
+  background: linear-gradient(to right, #eef0ff, rgba(238, 240, 255, 0.4));
+  color: #6366f1;
+  box-shadow: inset 0 0 0 1px #e0e7ff;
 }
 
 .uds-nav-icon-wrap {
@@ -108,7 +108,7 @@
 }
 
 .uds-nav-button.is-active .uds-nav-icon-wrap {
-  background: #06b6d4;
+  background: #6366f1;
   color: #ffffff;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .uds-nav-button.is-active .uds-nav-arrow {
-  color: #06b6d4;
+  color: #6366f1;
   transform: translateX(2px);
 }
 
@@ -147,7 +147,7 @@
 /* ---- Preview panel ---- */
 .uds-preview {
   border-radius: 20px;
-  background: linear-gradient(135deg, #06b6d4 0%, #06b6d4 55%, #2dd4bf 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #6366f1 55%, #a855f7 100%);
   padding: 1.5rem;
 }
 
@@ -167,7 +167,7 @@
 }
 
 .uds-preview-inner {
-  background: rgba(6, 182, 212, 0.12);
+  background: rgba(99, 102, 241, 0.12);
   border-radius: 16px;
   padding: 1rem;
 }
@@ -184,7 +184,7 @@
   height: 4px;
   width: 56px;
   border-radius: 999px;
-  background: linear-gradient(to right, #06b6d4, #818cf8);
+  background: linear-gradient(to right, #6366f1, #a855f7);
   margin-bottom: 1rem;
 }
 
@@ -292,7 +292,7 @@
 }
 
 .uds-toggle.is-on {
-  background: #06b6d4;
+  background: #6366f1;
 }
 
 .uds-toggle-knob {
@@ -316,8 +316,8 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: #ecfeff;
-  color: #0891b2;
+  background: #eef0ff;
+  color: #6366f1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,7 +368,7 @@
   width: 100%;
   max-width: 28px;
   border-radius: 6px 6px 0 0;
-  background: linear-gradient(to top, #06b6d4, #2dd4bf);
+  background: linear-gradient(to top, #6366f1, #a855f7);
 }
 
 .uds-bar-label {

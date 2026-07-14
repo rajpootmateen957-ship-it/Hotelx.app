@@ -10,6 +10,7 @@ import DashboardMock from "./components/section/feature/page";
 import Pricing from "./components/section/pricing";
 import Faq from "./components/section/faq";
 import Contact from "./components/section/contact";
+import Footer from "./components/section/footer";
 
 import "./App.css";
 
@@ -29,6 +30,7 @@ function App() {
       <Pricing />
       <Faq />
       <Contact />
+      <Footer />
        
 
      
