@@ -23,7 +23,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-grid">
         {/* Left column */}
         <div className="contact-left">

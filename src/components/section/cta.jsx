@@ -54,9 +54,9 @@ const Cta = () => {
         </div>
 
         <div className="cta-actions">
-          <button className="cta-btn cta-btn-filled">
+          <a href="#contact" className="cta-btn cta-btn-filled">
             Schedule demo <ArrowRight size={16} />
-          </button>
+          </a>
         </div>
       </div>
     </section>

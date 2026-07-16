@@ -1,10 +1,7 @@
 .official {
   width: 100%;
   padding: 70px 20px 0;
-  /* Reversed direction so it picks up exactly where Hero's gradient
-     ends (#f3e8ff) instead of restarting at #e0e7ff — this removes
-     the hard seam/line between the two sections. */
-  background: linear-gradient(160deg, #f3e8ff 0%, #f4f0ff 45%, #e0e7ff 100%);
+  background: transparent;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   text-align: center;
   overflow: hidden;

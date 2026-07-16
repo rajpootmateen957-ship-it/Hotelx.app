@@ -1,9 +1,7 @@
 .cta-section {
   width: 100%;
   padding: 70px 20px;
-  /* Continues exactly where the previous section's gradient ends
-     (#e0e7ff), so the transition is seamless with no visible seam. */
-  background: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #ffffff 65%, #f3e8ff 100%);
+  background: transparent;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   display: flex;
   justify-content: center;

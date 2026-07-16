@@ -62,7 +62,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section className="pricing-section">
+    <section className="pricing-section" id="pricing">
       <div className="pricing-header">
         <h2 className="pricing-title">
           Simple <span className="pricing-title-accent">Pricing</span> For
@@ -102,10 +102,10 @@ export default function Pricing() {
               <h3 className="pricing-plan-name">{plan.name}</h3>
               <p className="pricing-desc">{plan.description}</p>
 
-              <button className="pricing-cta">
+              <a href="#contact" className="pricing-cta">
                 {plan.cta}
                 <ArrowRight size={16} className="pricing-cta-arrow" />
-              </button>
+              </a>
 
               <ul className="pricing-features">
                 {plan.features.map((feature, i) => (

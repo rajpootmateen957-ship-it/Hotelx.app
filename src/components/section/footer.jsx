@@ -35,33 +35,33 @@ const YoutubeIcon = (props) => (
 );
 
 const socialLinks = [
-  { icon: FacebookIcon, label: "Facebook", href: "#" },
-  { icon: InstagramIcon, label: "Instagram", href: "#" },
-  { icon: XIcon, label: "X", href: "#" },
-  { icon: LinkedinIcon, label: "LinkedIn", href: "#" },
-  { icon: YoutubeIcon, label: "YouTube", href: "#" },
+  { icon: FacebookIcon, label: "Facebook", href: "#home" },
+  { icon: InstagramIcon, label: "Instagram", href: "#features" },
+  { icon: XIcon, label: "X", href: "#testimonials" },
+  { icon: LinkedinIcon, label: "LinkedIn", href: "#ai-section" },
+  { icon: YoutubeIcon, label: "YouTube", href: "#contact" },
 ];
 
 const productLinks = [
-  { label: "Features", href: "#" },
-  { label: "AI Section", href: "#" },
-  { label: "Home", href: "#" },
-  { label: "Contact", href: "#" },
-  { label: "Pricing", href: "#" },
+  { label: "Features", href: "#features" },
+  { label: "AI Section", href: "#ai-section" },
+  { label: "Home", href: "#home" },
+  { label: "Contact", href: "#contact" },
+  { label: "Pricing", href: "#pricing" },
 ];
 
 const companyLinks = [
-  { label: "Clients", href: "#" },
-  { label: "Testimonials", href: "#" },
-  { label: "FAQ", href: "#" },
-  { label: "Contact", href: "#" },
-  { label: "Privacy Policy", href: "#" },
+  { label: "Clients", href: "#contact" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#contact" },
+  { label: "Privacy Policy", href: "#contact" },
 ];
 
 const bottomLinks = [
-  { label: "Privacy", href: "#" },
-  { label: "Terms", href: "#" },
-  { label: "Cookies", href: "#" },
+  { label: "Privacy", href: "#contact" },
+  { label: "Terms", href: "#contact" },
+  { label: "Cookies", href: "#contact" },
 ];
 
 export default function Footer() {

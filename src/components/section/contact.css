@@ -1,9 +1,7 @@
 /* ==== Page shell ==== */
 .contact-section {
   width: 100%;
-  /* Continues exactly where the previous section's gradient ends
-     (#e0e7ff), so there's no visible seam between sections. */
-  background: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #ffffff 65%, #f3e8ff 100%);
+  background: transparent;
   padding: 5rem 1.5rem;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;

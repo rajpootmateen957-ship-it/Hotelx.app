@@ -304,7 +304,7 @@ export default function UnifiedDashboardSection() {
   const active = SECTIONS.find((s) => s.id === activeId);
 
   return (
-    <div className="uds-page">
+    <div className="uds-page" id="features">
       <div className="uds-card">
         {/* Sidebar */}
         <nav className="uds-nav">

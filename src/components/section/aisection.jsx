@@ -71,7 +71,7 @@ const AiCard = ({ icon: Icon, title, description, delay }) => {
 
 const AiSection = () => {
   return (
-    <section className="ai-section">
+    <section className="ai-section" id="ai-section">
       <div className="ai-section-header">
         <h2 className="ai-section-heading">
           <span className="ai-heading-dark">

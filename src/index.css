@@ -1,4 +1,20 @@
+:root {
+    --site-gradient: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #f3e8ff 100%);
+}
+
 *{
     padding: 0;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--site-gradient);
+}
+
+section[id], [id] {
+    scroll-margin-top: 100px;
 }

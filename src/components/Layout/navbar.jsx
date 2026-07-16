@@ -9,7 +9,6 @@ const navLinks = [
   { label: "FAQ", href: "#faq" },
   { label: "Pricing", href: "#pricing" },
   { label: "AI Section", href: "#ai-section" },
- 
 ];
 
 const Navbar = () => {
@@ -27,16 +26,18 @@ const Navbar = () => {
         <ul className="navbar-links">
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a href={link.href}>{link.label}</a>
+              <a href={link.href} onClick={closeMenu}>
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
 
         <div className="navbar-actions">
-          <a href="#login" className="btn btn-outline">
+          <a href="#contact" className="btn btn-outline" onClick={closeMenu}>
             Login
           </a>
-          <a href="#demo" className="btn btn-filled">
+          <a href="#contact" className="btn btn-filled" onClick={closeMenu}>
             Start a Demo
           </a>
         </div>
@@ -64,10 +65,10 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-mobile-actions">
-          <a href="#login" className="btn btn-outline" onClick={closeMenu}>
+          <a href="#contact" className="btn btn-outline" onClick={closeMenu}>
             Login
           </a>
-          <a href="#demo" className="btn btn-filled" onClick={closeMenu}>
+          <a href="#contact" className="btn btn-filled" onClick={closeMenu}>
             Start a Demo
           </a>
         </div>

@@ -2,9 +2,7 @@
 .uds-page {
   min-height: 100vh;
   width: 100%;
-  /* Continues exactly where the previous section's gradient ends
-     (#f3e8ff), so there's no visible seam between sections. */
-  background: linear-gradient(160deg, #f3e8ff 0%, #f4f0ff 35%, #ffffff 65%, #e0e7ff 100%);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;

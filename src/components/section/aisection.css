@@ -1,9 +1,7 @@
 .ai-section {
   width: 100%;
   padding: 80px 20px;
-  /* Continues exactly where Official section's gradient ends
-     (#e0e7ff) so the transition between sections is seamless. */
-  background: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #ffffff 65%, #f3e8ff 100%);
+  background: transparent;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
 }
 

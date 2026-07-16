@@ -2,16 +2,19 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-container">
         {/* Left side */}
         <div className="hero-content">
           <span className="hero-badge">Built For Modern Hotels</span>
 
           <h1 className="hero-heading">
-            The Enterprise Hotel OS: Connect Reception,{" "}
+            The Enterprise Hotel OS:
+            <br />
+            Connect Reception, Inventory,
+            <br />
             <span className="hero-heading-gradient">
-              Inventory, and Multi-Branch Hospitality Networks
+              and Multi-Branch Hospitality Networks
             </span>
           </h1>
 
@@ -26,11 +29,11 @@ const Hero = () => {
           </p>
 
           <div className="hero-actions">
-            <a href="#demo" className="btn btn-filled hero-btn">
+            <a href="#contact" className="btn btn-filled hero-btn">
               Schedule a Live Hotel Demo
               <span className="hero-btn-arrow">&rarr;</span>
             </a>
-            <a href="#architecture" className="btn btn-outline hero-btn">
+            <a href="#features" className="btn btn-outline hero-btn">
               View System 
             </a>
           </div>
