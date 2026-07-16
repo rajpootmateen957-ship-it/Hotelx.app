@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 480px) {
+  .uds-page {
+    padding: 1.5rem 0.875rem;
+  }
+}
+
 .uds-card {
   width: 100%;
   max-width: 1152px;
@@ -26,6 +32,7 @@
 @media (max-width: 768px) {
   .uds-card {
     flex-direction: column;
+    border-radius: 20px;
   }
 }
 
@@ -59,6 +66,9 @@
   .uds-nav-list {
     flex-direction: row;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 0.25rem;
   }
 }
 
@@ -81,6 +91,14 @@
   color: #64748b;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
+}
+
+@media (max-width: 480px) {
+  .uds-nav-button {
+    font-size: 0.8rem;
+    padding: 0.55rem 0.7rem;
+    gap: 0.5rem;
+  }
 }
 
 .uds-nav-button:hover {
@@ -123,6 +141,12 @@
   transition: transform 0.15s ease, color 0.15s ease;
 }
 
+@media (max-width: 768px) {
+  .uds-nav-arrow {
+    display: none;
+  }
+}
+
 .uds-nav-button.is-active .uds-nav-arrow {
   color: #6366f1;
   transform: translateX(2px);
@@ -144,6 +168,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .uds-content {
+    padding: 1.1rem;
+    gap: 1.1rem;
+  }
+}
+
 /* ---- Preview panel ---- */
 .uds-preview {
   border-radius: 20px;
@@ -157,6 +188,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .uds-preview {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+}
+
 .uds-preview-title {
   color: #ffffff;
   text-align: center;
@@ -166,10 +204,24 @@
   margin: 0 0 1.25rem 0;
 }
 
+@media (max-width: 480px) {
+  .uds-preview-title {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .uds-preview-inner {
   background: rgba(99, 102, 241, 0.12);
   border-radius: 16px;
   padding: 1rem;
+}
+
+@media (max-width: 480px) {
+  .uds-preview-inner {
+    padding: 0.75rem;
+    border-radius: 12px;
+  }
 }
 
 /* ---- Copy block ---- */
@@ -180,6 +232,18 @@
   margin: 0 0 0.5rem 0;
 }
 
+@media (max-width: 768px) {
+  .uds-heading {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .uds-heading {
+    font-size: 1.15rem;
+  }
+}
+
 .uds-divider {
   height: 4px;
   width: 56px;
@@ -188,8 +252,9 @@
   margin-bottom: 1rem;
 }
 
-/* Forced to a single line: font-size shrinks responsively with the
-   container instead of wrapping onto a second line. */
+/* Single-line behaviour kept as-is on desktop/tablet, but on small
+   screens it's switched to wrap — nowrap was clipping the sentence
+   entirely on narrow viewports instead of shrinking it. */
 .uds-copy {
   color: #64748b;
   font-size: clamp(0.7rem, 1.35vw, 0.9375rem);
@@ -207,11 +272,33 @@
   }
 }
 
+@media (max-width: 560px) {
+  .uds-copy {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    font-size: 0.85rem;
+  }
+}
+
 /* ---- Dashboard stat grid mock ---- */
 .uds-stat-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
+}
+
+@media (max-width: 560px) {
+  .uds-stat-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .uds-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .uds-stat-card {
@@ -226,6 +313,13 @@
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
 }
 
+@media (max-width: 560px) {
+  .uds-stat-card {
+    padding: 0.55rem;
+    gap: 0.35rem;
+  }
+}
+
 .uds-stat-icon {
   width: 32px;
   height: 32px;
@@ -235,11 +329,24 @@
   justify-content: center;
 }
 
+@media (max-width: 560px) {
+  .uds-stat-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 .uds-stat-value {
   font-size: 1.125rem;
   font-weight: 700;
   color: #1e293b;
   line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .uds-stat-value {
+    font-size: 0.95rem;
+  }
 }
 
 .uds-stat-label {
@@ -266,6 +373,13 @@
   gap: 0.75rem;
 }
 
+@media (max-width: 480px) {
+  .uds-mock-row {
+    padding: 0.65rem 0.75rem;
+    gap: 0.5rem;
+  }
+}
+
 .uds-mock-row:last-child {
   border-bottom: none;
 }
@@ -276,12 +390,25 @@
   font-weight: 500;
 }
 
+@media (max-width: 480px) {
+  .uds-row-name {
+    font-size: 0.78rem;
+  }
+}
+
 .uds-row-status {
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.25rem 0.625rem;
   border-radius: 999px;
   white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .uds-row-status {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.5rem;
+  }
 }
 
 /* status color variants */
@@ -335,15 +462,34 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 480px) {
+  .uds-role-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .uds-role-name {
   font-size: 0.875rem;
   color: #334155;
   font-weight: 600;
 }
 
+@media (max-width: 480px) {
+  .uds-role-name {
+    font-size: 0.8rem;
+  }
+}
+
 .uds-role-perms {
   font-size: 0.75rem;
   color: #94a3b8;
+}
+
+@media (max-width: 480px) {
+  .uds-role-perms {
+    font-size: 0.68rem;
+  }
 }
 
 /* bars mock */
@@ -357,6 +503,13 @@
   justify-content: space-between;
   gap: 1rem;
   height: 100%;
+}
+
+@media (max-width: 480px) {
+  .uds-bars {
+    padding: 1rem 0.75rem;
+    gap: 0.5rem;
+  }
 }
 
 .uds-bar-col {
@@ -375,6 +528,12 @@
   justify-content: center;
 }
 
+@media (max-width: 480px) {
+  .uds-bar-track {
+    height: 90px;
+  }
+}
+
 .uds-bar-fill {
   width: 100%;
   max-width: 28px;
@@ -382,8 +541,20 @@
   background: linear-gradient(to top, #6366f1, #a855f7);
 }
 
+@media (max-width: 480px) {
+  .uds-bar-fill {
+    max-width: 20px;
+  }
+}
+
 .uds-bar-label {
   font-size: 0.6875rem;
   color: #94a3b8;
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .uds-bar-label {
+    font-size: 0.6rem;
+  }
 }

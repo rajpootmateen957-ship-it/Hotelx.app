@@ -27,7 +27,6 @@ const Official = () => {
     return () => observer.disconnect();
   }, []);
 
-  // duplicate logos multiple times for a seamless infinite loop
   const marqueeLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
@@ -60,9 +59,6 @@ const Official = () => {
           isVisible ? "official-logos-visible" : ""
         }`}
       >
-        <div className="official-logos-fade official-logos-fade-left" />
-        <div className="official-logos-fade official-logos-fade-right" />
-
         <div className="official-logos-track">
           {marqueeLogos.map((logo, index) => (
             <div className="official-logo" key={index}>
