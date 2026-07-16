@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero-container">
         {/* Left side */}
         <div className="hero-content">
-          <span className="hero-badge">Built for Modern Hotels</span>
+          <span className="hero-badge">Built For Modern Hotels</span>
 
           <h1 className="hero-heading">
             The Enterprise Hotel OS: Connect Reception,{" "}
@@ -19,7 +19,10 @@ const Hero = () => {
             Stop losing margins to disconnected hotel software. A single,
             unified cloud platform built to seamlessly synchronize automated
             check-ins, staff workflows, food inventory, cafe POS, and car
-            rentals across all your hotel branches.
+            rentals across all your hotel branches. From a solo boutique
+            property to a nationwide chain, every front-desk action, every
+            stock update, and every guest interaction stays perfectly in
+            sync — in real time, on one dashboard.
           </p>
 
           <div className="hero-actions">
@@ -28,7 +31,7 @@ const Hero = () => {
               <span className="hero-btn-arrow">&rarr;</span>
             </a>
             <a href="#architecture" className="btn btn-outline hero-btn">
-              View System Architecture
+              View System 
             </a>
           </div>
         </div>
@@ -58,7 +61,7 @@ const Hero = () => {
                   <path d="M22 6l-10 7L2 6" />
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                 </svg>
-                <span>hello@hotelx.com</span>
+                <span>suadi@hotelx.com</span>
               </div>
             </div>
           </div>

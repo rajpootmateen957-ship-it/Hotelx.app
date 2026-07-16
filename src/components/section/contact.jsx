@@ -5,8 +5,8 @@ import "./contact.css";
 // ---- Contact info model ----------------------------------------------------
 
 const CONTACT_INFO = [
-  { icon: Mail, text: "sales@hotelx.com" },
-  { icon: Phone, text: "+92 300 2324443\n+1 343 2324443" },
+  { icon: Mail, text: "pakistan@hotelx.com" },
+  { icon: Phone, text: "+92 300 2324443\n+966 50 1234567" },
   { icon: MapPin, text: "Lahore, Pakistan · Makkah, Saudi Arabia" },
 ];
 
@@ -109,7 +109,7 @@ export default function Contact() {
               <MessageSquare size={18} className="contact-input-icon" />
               <textarea
                 className="contact-textarea"
-                placeholder="Total Room Count / Number of Branches (Dropdown)"
+                placeholder="Tell us about your hotel requirements..."
                 value={form.message}
                 onChange={handleChange("message")}
               />

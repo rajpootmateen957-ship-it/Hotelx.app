@@ -10,7 +10,7 @@ const FAQS = [
     question:
       "Can cafe purchases and car rental charges be added automatically to a guest's final hotel bill?",
     answer:
-      "Yes. Our unified architecture automatically routes dining tabs, spa sessions, and car rental expenditures directly to the guest's active digital hotel folio, simplifying checkout down to a single card swipe.",
+      "Yes. Our unified architecture automatically routes dining tabs, and car rental expenditures directly to the guest's active digital hotel folio, simplifying checkout down to a single card swipe.",
   },
   {
     id: "multibranch",
@@ -53,7 +53,7 @@ export default function FAQ() {
         <h2 className="faq-title">
           Everything you need to
           <br />
-          <span className="faq-title-accent">know about HotelX.</span>
+          <span className="faq-title-accent">know about HotelX</span>
         </h2>
         <p className="faq-subtitle">
           Find answers to the most common questions about our hotel management software.

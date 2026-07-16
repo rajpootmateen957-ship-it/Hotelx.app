@@ -4,7 +4,7 @@ import "./pricing.css";
 const plans = [
   {
     icon: Zap,
-    badge: "For small hotels",
+    badge: "For Small Hotels",
     price: "$49",
     period: "/month",
     name: "Essential Hotel",
@@ -41,7 +41,7 @@ const plans = [
   },
   {
     icon: Crown,
-    badge: "For hotel groups",
+    badge: "For Hotel Groups",
     price: "Custom",
     period: "",
     name: "Global Chain Ecosystem",

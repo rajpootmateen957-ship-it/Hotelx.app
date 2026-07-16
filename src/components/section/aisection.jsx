@@ -16,13 +16,13 @@ const cards = [
   },
   {
     icon: TrendingUp,
-    title: "AI-Powered Stock Forecasting:",
+    title: "AI-Powered Stock Forecasting",
     description:
       "Let AI analyze active room occupancy levels and past dining habits to forecast exactly how much stock your cafe and restaurant kitchens need to order, cutting food waste up to 20%.",
   },
   {
     icon: Users,
-    title: "AI Insights to lower climate control and lighting costs.",
+    title: "AI Insights to lower climate",
     description:
       "The platform interfaces with smart utility grids. The moment a guest checks out via their mobile portal, the system automatically triggers Eco-Mode to lower climate control and lighting costs.",
   },

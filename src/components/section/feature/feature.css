@@ -2,7 +2,9 @@
 .uds-page {
   min-height: 100vh;
   width: 100%;
-  background: #f8fafc;
+  /* Continues exactly where the previous section's gradient ends
+     (#f3e8ff), so there's no visible seam between sections. */
+  background: linear-gradient(160deg, #f3e8ff 0%, #f4f0ff 35%, #ffffff 65%, #e0e7ff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,12 +190,23 @@
   margin-bottom: 1rem;
 }
 
+/* Forced to a single line: font-size shrinks responsively with the
+   container instead of wrapping onto a second line. */
 .uds-copy {
   color: #64748b;
-  font-size: 0.9375rem;
+  font-size: clamp(0.7rem, 1.35vw, 0.9375rem);
   line-height: 1.6;
-  max-width: 640px;
+  max-width: none;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+@media (max-width: 768px) {
+  .uds-copy {
+    font-size: clamp(0.62rem, 2.6vw, 0.85rem);
+  }
 }
 
 /* ---- Dashboard stat grid mock ---- */

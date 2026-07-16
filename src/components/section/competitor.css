@@ -7,32 +7,38 @@
 
 .competitor-header {
   text-align: center;
-  max-width: 640px;
+  max-width: 700px;
   margin: 0 auto 40px;
 }
 
+/* Matches Hero / Official / AI Section heading size exactly */
 .competitor-heading {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 2.6vw, 2.3rem);
   font-weight: 800;
+  line-height: 1.3;
   letter-spacing: -0.5px;
-  margin: 0 0 12px;
+  margin: 0 0 16px;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
+/* Gradient removed — now plain dark text, same color as the rest
+   of the heading */
 .competitor-heading-gradient {
-  background: linear-gradient(100deg, #22c1e0, #6366f1, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #14142b;
 }
 
 .competitor-heading-dark {
   color: #14142b;
 }
 
+/* Matches Hero / Official / AI Section description size exactly */
 .competitor-description {
-  font-size: 14.5px;
+  font-size: 16px;
+  line-height: 1.8;
   color: #55556b;
-  margin: 0;
+  max-width: 560px;
+  margin: 0 auto;
 }
 
 .competitor-table-wrapper {
@@ -166,7 +172,7 @@
 /* Responsive */
 @media (max-width: 900px) {
   .competitor-heading {
-    font-size: 26px;
+    font-size: clamp(1.5rem, 4.5vw, 2rem);
   }
 }
 
@@ -192,11 +198,11 @@
   }
 
   .competitor-heading {
-    font-size: 22px;
+    font-size: clamp(1.3rem, 6vw, 1.7rem);
   }
 
   .competitor-description {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .competitor-table {

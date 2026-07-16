@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     quote:
-      "Before this system, our front desk, cafe, and housekeeping teams were on completely separate applications. Unifying everything into one dashboard completely eliminated walk-in room assignment errors. ",
+      "Before HotelX, our front desk, cafe, and housekeeping teams were on completely separate applications. Unifying everything into one dashboard completely eliminated walk-in room assignment errors. ",
     highlight: "Daily operations became faster",
     quoteEnd: "",
     name: "Ammar Khan",

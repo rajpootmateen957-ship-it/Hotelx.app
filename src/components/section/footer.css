@@ -80,12 +80,17 @@
   color: transparent;
 }
 
+/* Matches the same body-text size used across Hero / Official /
+   AI Section / Contact (16px, line-height 1.8), and now justified
+   so both edges align cleanly instead of a ragged right edge. */
 .footer-tagline {
-  font-size: 0.9rem;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.8;
   color: #94a3b8;
   max-width: 320px;
   margin: 0 0 1.75rem 0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .footer-social {
@@ -262,5 +267,13 @@
   .footer-scroll-top {
     align-self: flex-end;
     margin-top: -3rem;
+  }
+}
+
+/* ==== Responsive tagline tuning ==== */
+@media (max-width: 560px) {
+  .footer-tagline {
+    font-size: 15px;
+    max-width: 100%;
   }
 }

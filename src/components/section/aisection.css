@@ -1,6 +1,8 @@
 .ai-section {
   width: 100%;
   padding: 80px 20px;
+  /* Continues exactly where Official section's gradient ends
+     (#e0e7ff) so the transition between sections is seamless. */
   background: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #ffffff 65%, #f3e8ff 100%);
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
 }
@@ -11,12 +13,15 @@
   text-align: center;
 }
 
+/* Matches Hero / Official heading size exactly */
 .ai-section-heading {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 2.6vw, 2.3rem);
   font-weight: 800;
   line-height: 1.3;
   letter-spacing: -0.5px;
   margin: 0 0 16px;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .ai-heading-dark {
@@ -30,11 +35,15 @@
   background-clip: text;
 }
 
+/* Matches Hero / Official description size exactly */
 .ai-section-description {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.8;
   color: #55556b;
+  max-width: 620px;
   margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* 4 cards, one row on desktop */
@@ -110,12 +119,15 @@
   margin: 0 0 10px;
 }
 
+/* Justify-aligned so each card's paragraph reads clean on both edges */
 .ai-card-description {
   font-size: 12.5px;
   line-height: 1.65;
   color: #6b6b80;
   margin: 0;
   flex-grow: 1;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Responsive: always settle into a proper 2-up / 2-down grid
@@ -126,7 +138,7 @@
   }
 
   .ai-section-heading {
-    font-size: 26px;
+    font-size: clamp(1.5rem, 4.5vw, 2rem);
   }
 }
 
@@ -145,10 +157,10 @@
   }
 
   .ai-section-heading {
-    font-size: 22px;
+    font-size: clamp(1.3rem, 6vw, 1.7rem);
   }
 
   .ai-section-description {
-    font-size: 14px;
+    font-size: 15px;
   }
 }

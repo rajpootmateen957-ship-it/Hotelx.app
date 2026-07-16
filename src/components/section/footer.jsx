@@ -44,9 +44,9 @@ const socialLinks = [
 
 const productLinks = [
   { label: "Features", href: "#" },
-  { label: "AI Assistant", href: "#" },
-  { label: "Dashboard", href: "#" },
-  { label: "Comparison", href: "#" },
+  { label: "AI Section", href: "#" },
+  { label: "Home", href: "#" },
+  { label: "Contact", href: "#" },
   { label: "Pricing", href: "#" },
 ];
 

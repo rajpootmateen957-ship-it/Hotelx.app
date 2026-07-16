@@ -38,17 +38,20 @@ const Official = () => {
         }`}
       >
         <h2 className="official-heading">
-          Enterprise-Grade <br />
+          Enterprise-Grade{" "}
           <span className="official-heading-dark">Hospitality</span>{" "}
-          <span className="official-heading-gradient">Compliance</span>
-          <br />
-          <span className="official-heading-gradient">and Security</span>
+          <span className="official-heading-gradient">
+            Compliance and Security
+          </span>
         </h2>
 
         <p className="official-description">
           Our platform integrates perfectly with global travel networks, local
           tourism boards, and strict data security protocols to protect guest
-          profiles and transaction integrity across every hotel branch.
+          profiles and transaction integrity across every hotel branch. From
+          booking to checkout, every layer of your operation stays compliant,
+          encrypted, and audit-ready — trusted by chains and boutique
+          properties alike.
         </p>
       </div>
 
