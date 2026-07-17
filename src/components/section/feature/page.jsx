@@ -38,7 +38,7 @@ const SECTIONS = [
     label: "Dashboard",
     icon: LayoutGrid,
     heading: "Unified Dashboard",
-    copy: "No more isolated restaurant data. Post room charges directly from your cafe or bar point-of-sale straight to the guest's master invoice instantly.",
+    copy: "No more isolated restaurant data. Post room charges directly from your cafe or bar point-of-sale straight to the guest's master.",
     mockType: "dashboard",
     stats: [
       { icon: Bookmark, label: "Total Rooms", value: "3", tone: "uds-tone-red" },

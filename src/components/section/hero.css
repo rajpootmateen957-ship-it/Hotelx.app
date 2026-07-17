@@ -164,6 +164,7 @@
   align-items: flex-end;
   justify-content: space-between;
   padding: 20px 22px;
+  box-sizing: border-box;
 }
 
 .hero-panel-badge {
@@ -173,6 +174,7 @@
   font-weight: 700;
   padding: 8px 16px;
   border-radius: 20px;
+  white-space: nowrap;
 }
 
 .hero-panel-contact {
@@ -222,6 +224,12 @@
   }
 }
 
+/* On narrow screens the image shrinks but .hero-panel kept its
+   fixed 34% width + generous padding, so the diagonal panel's
+   content area became too small — the badge and the contact row
+   ended up stacked on top of each other. Panel width, padding and
+   font sizes now scale down with the image instead of staying
+   fixed. */
 @media (max-width: 480px) {
   .hero-heading {
     font-size: clamp(1.3rem, 6vw, 1.7rem);
@@ -235,10 +243,57 @@
     font-size: 14px;
     padding: 13px 20px;
   }
+
+  .hero-image {
+    height: 260px;
+  }
+
+  .hero-panel {
+    width: 46%;
+    padding: 14px 12px;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .hero-panel-badge {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .hero-panel-contact {
+    font-size: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .hero-panel-contact svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 360px) {
   .hero-heading-gradient {
     font-size: clamp(0.68rem, 5vw, 1.5rem);
+  }
+
+  .hero-image {
+    height: 220px;
+  }
+
+  .hero-panel {
+    width: 52%;
+    padding: 12px 10px;
+  }
+
+  .hero-panel-badge {
+    font-size: 10px;
+    padding: 5px 9px;
+  }
+
+  .hero-panel-contact {
+    font-size: 9px;
   }
 }

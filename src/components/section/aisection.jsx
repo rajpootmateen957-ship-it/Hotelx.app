@@ -82,7 +82,9 @@ const AiSection = () => {
         </h2>
         <p className="ai-section-description">
           HotelX AI helps managers understand bookings, guests, revenue,
-          commissions, and daily operations through simple commands.
+          commissions, and daily operations through simple commands — turning
+          scattered front-desk data into clear, actionable answers your whole
+          team can act on in seconds, from any device, at any hotel branch.
         </p>
       </div>
 

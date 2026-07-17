@@ -3,10 +3,11 @@
   padding: 80px 20px;
   background: transparent;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  scroll-margin-top: 24px;
 }
 
 .ai-section-header {
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto 50px;
   text-align: center;
 }
@@ -33,12 +34,11 @@
   background-clip: text;
 }
 
-/* Matches Hero / Official description size exactly */
 .ai-section-description {
   font-size: 16px;
   line-height: 1.8;
   color: #55556b;
-  max-width: 620px;
+  max-width: 720px;
   margin: 0 auto;
   text-align: justify;
   text-justify: inter-word;
@@ -117,7 +117,6 @@
   margin: 0 0 10px;
 }
 
-/* Justify-aligned so each card's paragraph reads clean on both edges */
 .ai-card-description {
   font-size: 12.5px;
   line-height: 1.65;
@@ -128,8 +127,7 @@
   text-justify: inter-word;
 }
 
-/* Responsive: always settle into a proper 2-up / 2-down grid
-   once there isn't room for all 4 cards in a single row. */
+/* Responsive */
 @media (max-width: 900px) {
   .ai-cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -137,6 +135,10 @@
 
   .ai-section-heading {
     font-size: clamp(1.5rem, 4.5vw, 2rem);
+  }
+
+  .ai-section-header {
+    max-width: 100%;
   }
 }
 
