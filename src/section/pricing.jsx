@@ -1,4 +1,5 @@
 import { Zap, Sparkles, Crown, CheckCircle2, ArrowRight } from "lucide-react";
+import Button from "../components/ui/Button";
 import "./pricing.css";
 
 const plans = [
@@ -102,10 +103,10 @@ export default function Pricing() {
               <h3 className="pricing-plan-name">{plan.name}</h3>
               <p className="pricing-desc">{plan.description}</p>
 
-              <a href="#contact" className="pricing-cta">
+              <Button href="#contact" variant="filled" className="pricing-cta">
                 {plan.cta}
                 <ArrowRight size={16} className="pricing-cta-arrow" />
-              </a>
+              </Button>
 
               <ul className="pricing-features">
                 {plan.features.map((feature, i) => (

@@ -1,0 +1,41 @@
+.btn-reusable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-position 0.35s ease;
+  box-sizing: border-box;
+}
+
+.btn-reusable-filled {
+  color: #ffffff;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background-size: 160% 100%;
+  background-position: 0% 0%;
+  border: none;
+  box-shadow: 0 10px 22px -10px rgba(99, 102, 241, 0.45);
+}
+
+.btn-reusable-filled:hover {
+  background-position: 100% 0%;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -10px rgba(99, 102, 241, 0.55);
+}
+
+.btn-reusable-outline {
+  background: transparent;
+  color: var(--color-dark);
+  border: 2px solid #e2e8f0;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-reusable-outline:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -10px rgba(99, 102, 241, 0.2);
+}

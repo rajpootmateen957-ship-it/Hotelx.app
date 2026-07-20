@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Button from "../components/ui/Button";
 import "./cta.css";
 
 const features = ["Free demo", "Quick setup", "Live support"];
@@ -54,9 +55,9 @@ const Cta = () => {
         </div>
 
         <div className="cta-actions">
-          <a href="#contact" className="cta-btn cta-btn-filled">
+          <Button href="#contact" variant="filled" className="cta-btn">
             Schedule demo <ArrowRight size={16} />
-          </a>
+          </Button>
         </div>
       </div>
     </section>

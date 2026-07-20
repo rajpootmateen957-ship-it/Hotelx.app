@@ -1,3 +1,4 @@
+import Button from "../components/ui/Button";
 import "./hero.css";
 
 const Hero = () => {
@@ -29,13 +30,13 @@ const Hero = () => {
           </p>
 
           <div className="hero-actions">
-            <a href="#contact" className="btn btn-filled hero-btn">
+            <Button href="#contact" variant="filled" className="hero-btn">
               Schedule a Live Hotel Demo
               <span className="hero-btn-arrow">&rarr;</span>
-            </a>
-            <a href="#features" className="btn btn-outline hero-btn">
+            </Button>
+            <Button href="#features" variant="outline" className="hero-btn">
               View System 
-            </a>
+            </Button>
           </div>
         </div>
 

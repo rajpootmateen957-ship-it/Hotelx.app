@@ -1,16 +1,16 @@
 import Navbar from "../components/Layout/navbar";
-import Hero from "../components/section/hero";
-import Official from "../components/section/official";
-import Counter from "../components/section/counter";
-import AiSection from "../components/section/aisection";
-import Testimonial from "../components/section/testimonial";  
-import Cta from "../components/section/cta";
-import Competitor from "../components/section/competitor";
-import DashboardMock from "../components/section/feature/page";
-import Pricing from "../components/section/pricing";
-import Faq from "../components/section/faq";
-import Contact from "../components/section/contact";
-import Footer from "../components/section/footer";
+import Hero from "../section/hero";
+import Official from "../section/official";
+import Counter from "../section/counter";
+import AiSection from "../section/aisection";
+import Testimonial from "../section/testimonial";  
+import Cta from "../section/cta";
+import Competitor from "../section/competitor";
+import DashboardMock from "../section/feature/page";
+import Pricing from "../section/pricing";
+import Faq from "../section/faq";
+import Contact from "../section/contact";
+import Footer from "../section/footer";
 
 function Home() {
   return (

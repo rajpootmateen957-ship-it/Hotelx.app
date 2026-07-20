@@ -1,4 +1,13 @@
 :root {
+    --color-primary: #6366f1;
+    --color-secondary: #a855f7;
+    --color-dark: #0f172a;
+    --color-light: #f8fafc;
+    --color-success: #22c55e;
+    --color-danger: #ef4444;
+    --color-muted: #64748b;
+    --color-border: #e7edf3;
+
     --site-gradient: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #f3e8ff 100%);
 }
 

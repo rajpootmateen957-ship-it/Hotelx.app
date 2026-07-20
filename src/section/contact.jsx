@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { User, Building2, Mail, MessageSquare, Phone, MapPin, ArrowRight } from "lucide-react";
+import Button from "../components/ui/Button";
 import "./contact.css";
 
 // ---- Contact info model ----------------------------------------------------
@@ -116,10 +117,10 @@ export default function Contact() {
             </div>
           </div>
 
-          <button type="submit" className="contact-submit">
+          <Button type="submit" variant="filled" className="contact-submit">
             Send message
             <ArrowRight size={17} className="contact-submit-arrow" />
-          </button>
+          </Button>
         </form>
       </div>
     </section>
