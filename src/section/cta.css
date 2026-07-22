@@ -41,7 +41,7 @@
 .cta-badge {
   display: inline-block;
   background: #eef0ff;
-  color: #6366f1;
+  color: var(--color-primary);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -63,7 +63,7 @@
 }
 
 .cta-heading-gradient {
-  background: linear-gradient(90deg, #6366f1, #a855f7);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -94,7 +94,7 @@
 }
 
 .cta-feature-icon {
-  color: #22c55e;
+  color: var(--color-success);
 }
 
 .cta-actions {
@@ -121,7 +121,7 @@
 }
 
 .cta-btn-filled {
-  background: linear-gradient(90deg, #6366f1, #a855f7);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
   color: #ffffff;
   border: 1.5px solid transparent;
   box-shadow: 0 10px 24px rgba(99, 102, 241, 0.35);

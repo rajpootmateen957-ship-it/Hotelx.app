@@ -1,31 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Check, X } from "lucide-react";
+import { competitorColumns as columns, competitorRows as rows, competitorHeaderData } from "../data/data";
 import "./competitor.css";
-
-const columns = ["HotelX", "Cloudbeds", "Mews", "Hotelogix", "eZee"];
-
-const rows = [
-  {
-    capability: "Native Multi-Branch Control",
-    values: [true, false, false, false, false],
-  },
-  {
-    capability: "Integrated Cafe & POS Billing",
-    values: [true, true, false, true, false],
-  },
-  {
-    capability: "Car Rental & Amenity Sync",
-    values: [true, true, true, false, false],
-  },
-  {
-    capability: "Live Housekeeping Mobile App",
-    values: [true, false, false, false, true],
-  },
-  {
-    capability: "Room Booking",
-    values: [true, true, true, true, true],
-  },
-];
 
 const Competitor = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,12 +26,11 @@ const Competitor = () => {
     <section className="competitor-section" ref={sectionRef}>
       <div className="competitor-header">
         <h2 className="competitor-heading">
-          <span className="competitor-heading-gradient">One software</span>{" "}
-          <span className="competitor-heading-dark"> For All Needs</span>
+          <span className="competitor-heading-gradient">{competitorHeaderData.titleGradient}</span>{" "}
+          <span className="competitor-heading-dark"> {competitorHeaderData.titleDark}</span>
         </h2>
         <p className="competitor-description">
-          A cleaner, smarter hotel management system built for modern hotel
-          operations.
+          {competitorHeaderData.description}
         </p>
       </div>
 

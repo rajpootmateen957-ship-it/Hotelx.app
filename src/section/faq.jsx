@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Minus, Plus } from "lucide-react";
-import { faqData } from "../data/data";
+import { faqData, FAQS } from "../data/data";
 import "./faq.css";
 
 // ---- Component ---------------------------------------------------------
 
 export default function FAQ() {
-  const [openId, setOpenId] = useState(faqData.items[0].id);
+  const [openId, setOpenId] = useState(FAQS[0].id);
 
   const toggle = (id) => {
     setOpenId((current) => (current === id ? null : id));
@@ -20,11 +20,13 @@ export default function FAQ() {
           <br />
           <span className="faq-title-accent">{faqData.titleAccent}</span>
         </h2>
-        <p className="faq-subtitle">{faqData.subtitle}</p>
+        <p className="faq-subtitle">
+          {faqData.subtitle}
+        </p>
       </div>
 
       <div className="faq-list">
-        {faqData.items.map((faq) => {
+        {FAQS.map((faq) => {
           const isOpen = openId === faq.id;
           return (
             <div

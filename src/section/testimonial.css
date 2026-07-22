@@ -35,7 +35,7 @@
 }
 
 .testimonial-arrow:hover {
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #ffffff;
   box-shadow: 0 10px 26px rgba(99, 102, 241, 0.35);
   transform: translateY(-2px);
@@ -114,7 +114,7 @@
 }
 
 .testimonial-highlight {
-  background: linear-gradient(90deg, #6366f1, #a855f7);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -138,7 +138,7 @@
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
 }
 
@@ -192,7 +192,7 @@
 .testimonial-dot-active {
   width: 24px;
   border-radius: 6px;
-  background: linear-gradient(90deg, #6366f1, #a855f7);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
 }
 
 /* Responsive */

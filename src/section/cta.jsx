@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Button from "../components/ui/Button";
+import { ctaSectionData, ctaFeatures as features } from "../data/data";
 import "./cta.css";
-
-const features = ["Free demo", "Quick setup", "Live support"];
 
 const Cta = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,18 +29,17 @@ const Cta = () => {
         className={`cta-card ${isVisible ? "cta-card-visible" : ""}`}
       >
         <div className="cta-content">
-          <span className="cta-badge">HOTELX MANAGEMENT PLATFORM</span>
+          <span className="cta-badge">{ctaSectionData.badge}</span>
 
           <h2 className="cta-heading">
-            <span className="cta-heading-dark">Ready to replace</span>{" "}
+            <span className="cta-heading-dark">{ctaSectionData.titleDark}</span>{" "}
             <span className="cta-heading-gradient">
-              your fragmented hotel tools with a high-performance system?
+              {ctaSectionData.titleGradient}
             </span>
           </h2>
 
           <p className="cta-description">
-            Manage reservations, rooms, guests, billing, housekeeping, and
-            reports from one elegant hotel management system.
+            {ctaSectionData.description}
           </p>
 
           <div className="cta-features">
@@ -56,7 +54,7 @@ const Cta = () => {
 
         <div className="cta-actions">
           <Button href="#contact" variant="filled" className="cta-btn">
-            Schedule demo <ArrowRight size={16} />
+            {ctaSectionData.buttonText} <ArrowRight size={16} />
           </Button>
         </div>
       </div>

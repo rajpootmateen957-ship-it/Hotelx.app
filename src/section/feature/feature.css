@@ -88,7 +88,7 @@
   white-space: nowrap;
   border: none;
   background: transparent;
-  color: #64748b;
+  color: var(--color-muted);
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
 }
@@ -102,13 +102,13 @@
 }
 
 .uds-nav-button:hover {
-  background: #f8fafc;
+  background: var(--color-light);
   color: #334155;
 }
 
 .uds-nav-button.is-active {
   background: linear-gradient(to right, #eef0ff, rgba(238, 240, 255, 0.4));
-  color: #6366f1;
+  color: var(--color-primary);
   box-shadow: inset 0 0 0 1px #e0e7ff;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .uds-nav-button.is-active .uds-nav-icon-wrap {
-  background: #6366f1;
+  background: var(--color-primary);
   color: #ffffff;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .uds-nav-button.is-active .uds-nav-arrow {
-  color: #6366f1;
+  color: var(--color-primary);
   transform: translateX(2px);
 }
 
@@ -178,7 +178,7 @@
 /* ---- Preview panel ---- */
 .uds-preview {
   border-radius: 20px;
-  background: linear-gradient(135deg, #6366f1 0%, #6366f1 55%, #a855f7 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary) 55%, var(--color-secondary) 100%);
   padding: 1.5rem;
 }
 
@@ -228,7 +228,7 @@
 .uds-heading {
   font-size: 1.625rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--color-dark);
   margin: 0 0 0.5rem 0;
 }
 
@@ -248,7 +248,7 @@
   height: 4px;
   width: 56px;
   border-radius: 999px;
-  background: linear-gradient(to right, #6366f1, #a855f7);
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   margin-bottom: 1rem;
 }
 
@@ -256,7 +256,7 @@
    screens it's switched to wrap — nowrap was clipping the sentence
    entirely on narrow viewports instead of shrinking it. */
 .uds-copy {
-  color: #64748b;
+  color: var(--color-muted);
   font-size: clamp(0.7rem, 1.35vw, 0.9375rem);
   line-height: 1.6;
   max-width: none;
@@ -415,7 +415,7 @@
 .uds-tone-emerald { color: #059669; background: #ecfdf5; }
 .uds-tone-amber   { color: #d97706; background: #fffbeb; }
 .uds-tone-indigo  { color: #4f46e5; background: #eef2ff; }
-.uds-tone-slate   { color: #64748b; background: #f1f5f9; }
+.uds-tone-slate   { color: var(--color-muted); background: #f1f5f9; }
 .uds-tone-red     { color: #dc2626; background: #fef2f2; }
 
 /* toggle switch */
@@ -430,7 +430,7 @@
 }
 
 .uds-toggle.is-on {
-  background: #6366f1;
+  background: var(--color-primary);
 }
 
 .uds-toggle-knob {
@@ -455,7 +455,7 @@
   height: 36px;
   border-radius: 10px;
   background: #eef0ff;
-  color: #6366f1;
+  color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,7 +538,7 @@
   width: 100%;
   max-width: 28px;
   border-radius: 6px 6px 0 0;
-  background: linear-gradient(to top, #6366f1, #a855f7);
+  background: linear-gradient(to top, var(--color-primary), var(--color-secondary));
 }
 
 @media (max-width: 480px) {

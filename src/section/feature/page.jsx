@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { dashboardSections } from "../../data/data";
+import { featureSections as SECTIONS } from "../../data/data";
 import "./feature.css";
-
-const SECTIONS = dashboardSections;
 
 // ---- Preview mock renderers -------------------------------------------------
 
@@ -86,20 +84,17 @@ function BarsMock({ rows }) {
 }
 
 function PreviewMock({ section }) {
-  switch (section.mockType) {
-    case "dashboard":
-      return <DashboardMock section={section} />;
-    case "list":
-      return <ListMock rows={section.rows} />;
-    case "toggles":
-      return <TogglesMock rows={section.rows} />;
-    case "roles":
-      return <RolesMock rows={section.rows} />;
-    case "bars":
-      return <BarsMock rows={section.rows} />;
-    default:
-      return null;
-  }
+  return (
+    <div style={{ width: "100%", height: "100%" }}>
+      {section.image && (
+        <img
+          src={section.image}
+          alt={section.label}
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+        />
+      )}
+    </div>
+  );
 }
 
 // ---- Main component ----------------------------------------------------

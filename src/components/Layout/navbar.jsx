@@ -1,15 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { navLinks, navbarData } from "../../data/data";
 import "./navbar.css";
-
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Features", href: "#features" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "AI Section", href: "#ai-section" },
-];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +12,7 @@ const Navbar = () => {
     <header className="navbar-wrapper">
       <nav className="navbar">
         <a href="#home" className="navbar-logo" onClick={closeMenu}>
-          Hotel<span>X</span>
+          {navbarData.logo}<span>{navbarData.logoAccent}</span>
         </a>
 
         <ul className="navbar-links">
@@ -35,10 +27,10 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <a href="#contact" className="btn btn-outline" onClick={closeMenu}>
-            Login
+            {navbarData.loginText}
           </a>
           <a href="#contact" className="btn btn-filled" onClick={closeMenu}>
-            Start a Demo
+            {navbarData.demoText}
           </a>
         </div>
 
@@ -66,10 +58,10 @@ const Navbar = () => {
 
         <div className="navbar-mobile-actions">
           <a href="#contact" className="btn btn-outline" onClick={closeMenu}>
-            Login
+            {navbarData.loginText}
           </a>
           <a href="#contact" className="btn btn-filled" onClick={closeMenu}>
-            Start a Demo
+            {navbarData.demoText}
           </a>
         </div>
       </div>

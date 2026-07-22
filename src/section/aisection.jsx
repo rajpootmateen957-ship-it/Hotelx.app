@@ -1,38 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  FileText,
-  TrendingUp,
-  Users,
-  CalendarCheck,
-} from "lucide-react";
+import { aiSectionData, aiCards as cards } from "../data/data";
 import "./aisection.css";
-
-const cards = [
-  {
-    icon: FileText,
-    title: "Instant RevPAR Optimization",
-    description:
-      "Maximize room occupancy and RevPAR instantly. Our intelligent engine adjusts room rates in real time based on local market demand, seasonal shifts, and competitor data across every hotel location.",
-  },
-  {
-    icon: TrendingUp,
-    title: "AI-Powered Stock Forecasting",
-    description:
-      "Let AI analyze active room occupancy levels and past dining habits to forecast exactly how much stock your cafe and restaurant kitchens need to order, cutting food waste up to 20%.",
-  },
-  {
-    icon: Users,
-    title: "AI Insights to lower climate",
-    description:
-      "The platform interfaces with smart utility grids. The moment a guest checks out via their mobile portal, the system automatically triggers Eco-Mode to lower climate control and lighting costs.",
-  },
-  {
-    icon: CalendarCheck,
-    title: "AI Booking Analysis",
-    description:
-      "Handle up to 75% of routine guest requests — like room service orders, Wi-Fi passwords, and late checkout inquiries — instantly in multiple languages without bothering your front desk.",
-  },
-];
 
 const AiCard = ({ icon: Icon, title, description, delay }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,16 +43,13 @@ const AiSection = () => {
       <div className="ai-section-header">
         <h2 className="ai-section-heading">
           <span className="ai-heading-dark">
-            A Smart Hospitality: AI-Driven
+            {aiSectionData.titleDark}
           </span>
           <br />
-          <span className="ai-heading-gradient">Hotel Operations</span>
+          <span className="ai-heading-gradient">{aiSectionData.titleGradient}</span>
         </h2>
         <p className="ai-section-description">
-          HotelX AI helps managers understand bookings, guests, revenue,
-          commissions, and daily operations through simple commands — turning
-          scattered front-desk data into clear, actionable answers your whole
-          team can act on in seconds, from any device, at any hotel branch.
+          {aiSectionData.description}
         </p>
       </div>
 

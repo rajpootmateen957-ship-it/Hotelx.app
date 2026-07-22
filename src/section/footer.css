@@ -74,7 +74,7 @@
 }
 
 .footer-logo-accent {
-  background: linear-gradient(90deg, #6366f1, #a855f7);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -114,7 +114,7 @@
 }
 
 .footer-social-btn:hover {
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   border-color: transparent;
   transform: translateY(-2px);
 }
@@ -246,7 +246,7 @@
   border: none;
   cursor: pointer;
   color: #ffffff;
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   box-shadow: 0 10px 24px -8px rgba(99, 102, 241, 0.55);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }

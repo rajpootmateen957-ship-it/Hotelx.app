@@ -1,6 +1,6 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import Button from "../components/ui/Button";
-import { pricingData } from "../data/data";
+import { pricingData, plans } from "../data/data";
 import "./pricing.css";
 
 export default function Pricing() {
@@ -10,11 +10,13 @@ export default function Pricing() {
         <h2 className="pricing-title">
           {pricingData.title} <span className="pricing-title-accent">{pricingData.titleAccent}</span> {pricingData.titleEnd}
         </h2>
-        <p className="pricing-subtitle">{pricingData.subtitle}</p>
+        <p className="pricing-subtitle">
+          {pricingData.subtitle}
+        </p>
       </div>
 
       <div className="pricing-grid">
-        {pricingData.plans.map((plan) => {
+        {plans.map((plan) => {
           const Icon = plan.icon;
           return (
             <div key={plan.name} className="pricing-card">
