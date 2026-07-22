@@ -1,33 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Building2, BadgeCheck, ChefHat, ShieldCheck } from "lucide-react";
+import { stats } from "../data/data";
 import "./counter.css";
-
-const stats = [
-  {
-    icon: Building2,
-    value: 85,
-    suffix: "%",
-    label: "Front Desk Efficiency",
-  },
-  {
-    icon: BadgeCheck,
-    value: 18,
-    suffix: "%",
-    label: "Revenue Growth",
-  },
-  {
-    icon: ChefHat,
-    value: 20,
-    suffix: "%",
-    label: "Kitchen Waste Reduction",
-  },
-  {
-    icon: ShieldCheck,
-    value: 100,
-    suffix: "%",
-    label: "Centralized Hotel Operations",
-  },
-];
 
 const useCountUp = (end, shouldStart, duration = 1500) => {
   const [count, setCount] = useState(0);

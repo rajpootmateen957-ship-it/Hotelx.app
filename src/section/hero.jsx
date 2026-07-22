@@ -1,4 +1,5 @@
 import Button from "../components/ui/Button";
+import { heroData } from "../data/data";
 import "./hero.css";
 
 const Hero = () => {
@@ -7,35 +8,27 @@ const Hero = () => {
       <div className="hero-container">
         {/* Left side */}
         <div className="hero-content">
-          <span className="hero-badge">Built For Modern Hotels</span>
+          <span className="hero-badge">{heroData.badge}</span>
 
           <h1 className="hero-heading">
-            The Enterprise Hotel OS:
+            {heroData.title.line1}
             <br />
-            Connect Reception, Inventory,
+            {heroData.title.line2}
             <br />
             <span className="hero-heading-gradient">
-              and Multi-Branch Hospitality Networks
+              {heroData.title.line3}
             </span>
           </h1>
 
-          <p className="hero-description">
-            Stop losing margins to disconnected hotel software. A single,
-            unified cloud platform built to seamlessly synchronize automated
-            check-ins, staff workflows, food inventory, cafe POS, and car
-            rentals across all your hotel branches. From a solo boutique
-            property to a nationwide chain, every front-desk action, every
-            stock update, and every guest interaction stays perfectly in
-            sync — in real time, on one dashboard.
-          </p>
+          <p className="hero-description">{heroData.description}</p>
 
           <div className="hero-actions">
             <Button href="#contact" variant="filled" className="hero-btn">
-              Schedule a Live Hotel Demo
+              {heroData.buttons.primary}
               <span className="hero-btn-arrow">&rarr;</span>
             </Button>
             <Button href="#features" variant="outline" className="hero-btn">
-              View System 
+              {heroData.buttons.secondary}
             </Button>
           </div>
         </div>
@@ -44,7 +37,7 @@ const Hero = () => {
         <div className="hero-visual">
           <div className="hero-image-card">
             <img
-              src="https://images.unsplash.com/photo-1774192621035-20d11389f781?auto=format&fit=crop&w=1200&q=80"
+              src={heroData.image}
               alt="Modern hotel lobby and reception"
               className="hero-image"
             />
@@ -65,7 +58,7 @@ const Hero = () => {
                   <path d="M22 6l-10 7L2 6" />
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                 </svg>
-                <span>suadi@hotelx.com</span>
+                <span>{heroData.email}</span>
               </div>
             </div>
           </div>

@@ -1,37 +1,7 @@
 import { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { testimonials } from "../data/data";
 import "./testimonial.css";
-
-const testimonials = [
-  {
-    quote: "The room booking flow is simple, clear, and professional. Our front desk team now handles guest check-ins with ",
-    highlight: "much less confusion",
-    quoteEnd: ".",
-    name: "Sarah Ahmed",
-    role: "Operations Manager",
-    company: "Four Seasons Hotel",
-    initials: "SA",
-  },
-  {
-    quote: "HotelX helped us reduce manual reporting work and gave management ",
-    highlight: "better visibility",
-    quoteEnd: " into revenue, occupancy, and room status.",
-    name: "Bilal Sheikh",
-    role: "Resort Manager",
-    company: "Marriott",
-    initials: "BS",
-  },
-  {
-    quote:
-      "Before HotelX, our front desk, cafe, and housekeeping teams were on completely separate applications. Unifying everything into one dashboard completely eliminated walk-in room assignment errors. ",
-    highlight: "Daily operations became faster",
-    quoteEnd: "",
-    name: "Ammar Khan",
-    role: "Hotel Owner",
-    company: "Sirgis Hotel",
-    initials: "AK",
-  },
-];
 
 const Testimonial = () => {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -1,47 +1,12 @@
 import React, { useState } from "react";
 import { Minus, Plus } from "lucide-react";
+import { faqData } from "../data/data";
 import "./faq.css";
-
-// ---- FAQ content model -----------------------------------------------------
-
-const FAQS = [
-  {
-    id: "billing",
-    question:
-      "Can cafe purchases and car rental charges be added automatically to a guest's final hotel bill?",
-    answer:
-      "Yes. Our unified architecture automatically routes dining tabs, and car rental expenditures directly to the guest's active digital hotel folio, simplifying checkout down to a single card swipe.",
-  },
-  {
-    id: "multibranch",
-    question: "How does the system sync operations and profiles across multiple hotel branches?",
-    answer:
-      "The platform houses a centralized database matrix. This lets hotel groups share guest histories and loyalty data across branches while keeping individual branch inventories, accounting files, and tax reporting structures completely distinct.",
-  },
-  {
-    id: "mobile",
-    question: "Can my housekeeping and maintenance crews update room statuses from their mobile phones?",
-    answer:
-      "Absolutely. The platform features a responsive, mobile-optimized interface for floor staff. Cleaners can mark a room as \"Cleaned\" or report a maintenance issue, which triggers a live notification at the reception desk instantly.",
-  },
-  {
-    id: "training",
-    question: "How long does it take to train front office personnel on this hospitality software?",
-    answer:
-      "Because the user interface was designed with modern user experience principles, new staff members can master core front-desk workflows—such as reservation adjustments, guest search, and invoice splitting—in less than two hours.",
-  },
-  {
-    id: "inventory",
-    question: "Does the food inventory module alert our kitchen manager when stock runs low?",
-    answer:
-      "Yes. You can define custom minimum stock alert thresholds for critical kitchen and cafe ingredients. When stock dips below these parameters, the system triggers automated reorder notifications to prevent service delays.",
-  },
-];
 
 // ---- Component ---------------------------------------------------------
 
 export default function FAQ() {
-  const [openId, setOpenId] = useState(FAQS[0].id);
+  const [openId, setOpenId] = useState(faqData.items[0].id);
 
   const toggle = (id) => {
     setOpenId((current) => (current === id ? null : id));
@@ -51,17 +16,15 @@ export default function FAQ() {
     <section className="faq-section" id="faq">
       <div className="faq-header">
         <h2 className="faq-title">
-          Everything you need to
+          {faqData.title}
           <br />
-          <span className="faq-title-accent">know about HotelX</span>
+          <span className="faq-title-accent">{faqData.titleAccent}</span>
         </h2>
-        <p className="faq-subtitle">
-          Find answers to the most common questions about our hotel management software.
-        </p>
+        <p className="faq-subtitle">{faqData.subtitle}</p>
       </div>
 
       <div className="faq-list">
-        {FAQS.map((faq) => {
+        {faqData.items.map((faq) => {
           const isOpen = openId === faq.id;
           return (
             <div
