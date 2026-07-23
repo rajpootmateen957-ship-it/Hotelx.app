@@ -30,12 +30,14 @@ import {
   BadgeCheck,
   ChefHat,
   FileText,
+  TrendingUp,
+  CheckCircle2,
   Mail,
   Phone,
   MapPin,
 } from "lucide-react";
 
-import { heroImage, featureImages } from "../assets/images/images";
+import { heroImage, featureImages, officialLogos } from "../assets/images/images";
 
 /* ===========================
    NAVBAR
@@ -87,12 +89,7 @@ export const officialData = {
     "Our platform integrates perfectly with global travel networks, local tourism boards, and strict data security protocols to protect guest profiles and transaction integrity across every hotel branch. From booking to checkout, every layer of your operation stays compliant, encrypted, and audit-ready — trusted by chains and boutique properties alike.",
 };
 
-export const officialLogos = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmF0mUsuOdwiB6ylsa5NkwUk6VEzDlvxerLgjMKD9kw&s=10",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWQtwOfnMtQaFFadcvYj1SRJbvP6By9_ATYw25KvYKSQ&s=10",
-  "https://hotel-x-tau.vercel.app/static/media/owasp.ea51fb06f4cf1c8b0f4f.png",
-  "https://hotel-x-tau.vercel.app/static/media/iso.6b28618eba1af6140c56.png",
-];
+export { officialLogos };
 
 /* ===========================
    COUNTER

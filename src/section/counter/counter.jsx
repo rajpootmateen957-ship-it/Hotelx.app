@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { counterStats as stats } from "../data/data";
+import { counterStats as stats } from "../../data/data";
 import "./counter.css";
 
 const useCountUp = (end, shouldStart, duration = 1500) => {

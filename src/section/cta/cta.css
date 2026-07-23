@@ -15,13 +15,13 @@
   justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--color-rgba-255-255-255-0_85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(236, 236, 242, 0.9);
+  border: 1px solid var(--color-rgba-236-236-242-0_9);
   border-radius: 28px;
   padding: 44px 48px;
-  box-shadow: 0 20px 55px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 20px 55px var(--color-rgba-99-102-241-0_15);
 
   opacity: 0;
   transform: translateY(30px);
@@ -40,7 +40,7 @@
 
 .cta-badge {
   display: inline-block;
-  background: #eef0ff;
+  background: var(--color-hex-eef0ff);
   color: var(--color-primary);
   font-size: 11px;
   font-weight: 700;
@@ -59,7 +59,7 @@
 }
 
 .cta-heading-dark {
-  color: #14142b;
+  color: var(--color-hex-14142b);
 }
 
 .cta-heading-gradient {
@@ -72,7 +72,7 @@
 .cta-description {
   font-size: 14.5px;
   line-height: 1.7;
-  color: #55556b;
+  color: var(--color-hex-55556b);
   max-width: 480px;
   margin: 0 0 20px;
 }
@@ -90,7 +90,7 @@
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
-  color: #14142b;
+  color: var(--color-hex-14142b);
 }
 
 .cta-feature-icon {
@@ -122,13 +122,13 @@
 
 .cta-btn-filled {
   background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-  color: #ffffff;
+  color: var(--color-white);
   border: 1.5px solid transparent;
-  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 10px 24px var(--color-rgba-99-102-241-0_35);
 }
 
 .cta-btn-filled:hover {
-  box-shadow: 0 14px 32px rgba(99, 102, 241, 0.45);
+  box-shadow: 0 14px 32px var(--color-rgba-99-102-241-0_45);
   transform: translateY(-2px);
 }
 

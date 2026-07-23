@@ -33,7 +33,7 @@
 }
 
 .official-heading-dark {
-  color: #14142b;
+  color: var(--color-hex-14142b);
 }
 
 .official-heading-gradient {
@@ -46,7 +46,7 @@
 .official-description {
   font-size: 16px;
   line-height: 1.8;
-  color: #55556b;
+  color: var(--color-hex-55556b);
   max-width: 760px;
   margin: 0 auto;
   text-align: justify;
@@ -74,15 +74,15 @@
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent 0%,
-    #000 8%,
-    #000 92%,
+    var(--color-black) 8%,
+    var(--color-black) 92%,
     transparent 100%
   );
   mask-image: linear-gradient(
     90deg,
     transparent 0%,
-    #000 8%,
-    #000 92%,
+    var(--color-black) 8%,
+    var(--color-black) 92%,
     transparent 100%
   );
 }
@@ -182,15 +182,15 @@
     -webkit-mask-image: linear-gradient(
       90deg,
       transparent 0%,
-      #000 5%,
-      #000 95%,
+      var(--color-black) 5%,
+      var(--color-black) 95%,
       transparent 100%
     );
     mask-image: linear-gradient(
       90deg,
       transparent 0%,
-      #000 5%,
-      #000 95%,
+      var(--color-black) 5%,
+      var(--color-black) 95%,
       transparent 100%
     );
   }

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Check, X } from "lucide-react";
-import { competitorColumns as columns, competitorRows as rows, competitorHeaderData } from "../data/data";
+import { competitorColumns as columns, competitorRows as rows, competitorHeaderData } from "../../data/data";
 import "./competitor.css";
 
 const Competitor = () => {

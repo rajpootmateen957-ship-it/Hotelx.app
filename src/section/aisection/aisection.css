@@ -24,7 +24,7 @@
 }
 
 .ai-heading-dark {
-  color: #14142b;
+  color: var(--color-hex-14142b);
 }
 
 .ai-heading-gradient {
@@ -37,7 +37,7 @@
 .ai-section-description {
   font-size: 16px;
   line-height: 1.8;
-  color: #55556b;
+  color: var(--color-hex-55556b);
   max-width: 720px;
   margin: 0 auto;
   text-align: justify;
@@ -56,13 +56,13 @@
 .ai-card {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--color-rgba-255-255-255-0_8);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(236, 236, 242, 0.9);
+  border: 1px solid var(--color-rgba-236-236-242-0_9);
   border-radius: 22px;
   padding: 22px 20px;
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 10px 30px var(--color-rgba-99-102-241-0_1);
 
   opacity: 0;
   transform: translateY(30px);
@@ -75,7 +75,7 @@
 }
 
 .ai-card:hover {
-  box-shadow: 0 16px 40px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 16px 40px var(--color-rgba-99-102-241-0_2);
   transform: translateY(-4px);
 }
 
@@ -90,9 +90,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--color-white);
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 6px 16px var(--color-rgba-99-102-241-0_35);
   margin-bottom: 14px;
 }
 
@@ -102,7 +102,7 @@
   font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--color-primary);
-  background: #eef0ff;
+  background: var(--color-hex-eef0ff);
   padding: 4px 10px;
   border-radius: 10px;
   width: fit-content;
@@ -112,7 +112,7 @@
 .ai-card-title {
   font-size: 15px;
   font-weight: 700;
-  color: #14142b;
+  color: var(--color-hex-14142b);
   line-height: 1.4;
   margin: 0 0 10px;
 }
@@ -120,7 +120,7 @@
 .ai-card-description {
   font-size: 12.5px;
   line-height: 1.65;
-  color: #6b6b80;
+  color: var(--color-hex-6b6b80);
   margin: 0;
   flex-grow: 1;
   text-align: justify;

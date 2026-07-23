@@ -23,21 +23,21 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background: #ffffff;
-  color: #14142b;
+  background: var(--color-white);
+  color: var(--color-hex-14142b);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.18);
+  box-shadow: 0 6px 18px var(--color-rgba-99-102-241-0_18);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease,
     color 0.2s ease;
 }
 
 .testimonial-arrow:hover {
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: #ffffff;
-  box-shadow: 0 10px 26px rgba(99, 102, 241, 0.35);
+  color: var(--color-white);
+  box-shadow: 0 10px 26px var(--color-rgba-99-102-241-0_35);
   transform: translateY(-2px);
 }
 
@@ -53,14 +53,14 @@
 }
 
 .testimonial-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--color-rgba-255-255-255-0_85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(236, 236, 242, 0.9);
+  border: 1px solid var(--color-rgba-236-236-242-0_9);
   border-radius: 26px;
   padding: 48px 56px;
   text-align: center;
-  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 20px 50px var(--color-rgba-99-102-241-0_15);
 
   animation: testimonial-fade-in 0.5s ease forwards;
 }
@@ -108,7 +108,7 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 1.55;
-  color: #14142b;
+  color: var(--color-hex-14142b);
   letter-spacing: -0.3px;
   margin: 0 0 30px;
 }
@@ -137,9 +137,9 @@
   justify-content: center;
   font-size: 14px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-white);
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 6px 16px var(--color-rgba-99-102-241-0_35);
 }
 
 .testimonial-author-info {
@@ -149,7 +149,7 @@
 .testimonial-name {
   font-size: 13.5px;
   font-weight: 700;
-  color: #14142b;
+  color: var(--color-hex-14142b);
   margin: 0;
   line-height: 1.4;
 }
@@ -157,7 +157,7 @@
 .testimonial-role {
   font-size: 12px;
   font-weight: 600;
-  color: #6b6b80;
+  color: var(--color-hex-6b6b80);
   margin: 0;
   line-height: 1.4;
 }
@@ -165,7 +165,7 @@
 .testimonial-company {
   font-size: 11.5px;
   font-weight: 500;
-  color: #9c9cb0;
+  color: var(--color-hex-9c9cb0);
   margin: 0;
   line-height: 1.4;
 }
@@ -183,7 +183,7 @@
   height: 8px;
   border-radius: 50%;
   border: none;
-  background: rgba(20, 20, 43, 0.18);
+  background: var(--color-rgba-20-20-43-0_18);
   cursor: pointer;
   padding: 0;
   transition: all 0.3s ease;

@@ -1,5 +1,5 @@
 :root {
-    --site-gradient: linear-gradient(160deg, #e0e7ff 0%, #f4f0ff 35%, #f3e8ff 100%);
+    --site-gradient: linear-gradient(160deg, var(--color-hex-e0e7ff) 0%, var(--color-hex-f4f0ff) 35%, var(--color-hex-f3e8ff) 100%);
 }
 
 *{

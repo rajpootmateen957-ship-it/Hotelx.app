@@ -1,5 +1,5 @@
-import Button from "../components/ui/Button";
-import { heroData } from "../data/data";
+import Button from "../../components/Button/Button";
+import { heroData } from "../../data/data";
 import "./hero.css";
 
 const Hero = () => {

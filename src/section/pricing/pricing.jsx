@@ -1,6 +1,6 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
-import Button from "../components/ui/Button";
-import { pricingData, plans } from "../data/data";
+import Button from "../../components/Button/Button";
+import { pricingData, plans } from "../../data/data";
 import "./pricing.css";
 
 export default function Pricing() {

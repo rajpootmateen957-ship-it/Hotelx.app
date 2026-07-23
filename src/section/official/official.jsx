@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { officialData, officialLogos as logos } from "../data/data";
+import { officialData, officialLogos as logos } from "../../data/data";
 import "./official.css";
 
 const Official = () => {

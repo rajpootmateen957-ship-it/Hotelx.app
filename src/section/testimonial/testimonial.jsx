@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { testimonials } from "../data/data";
+import { testimonials } from "../../data/data";
 import "./testimonial.css";
 
 const Testimonial = () => {

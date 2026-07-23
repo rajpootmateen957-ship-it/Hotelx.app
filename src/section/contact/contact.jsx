@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { User, Building2, Mail, MessageSquare, ArrowRight } from "lucide-react";
-import Button from "../components/ui/Button";
-import { contactData } from "../data/data";
+import Button from "../../components/Button/Button";
+import { contactData } from "../../data/data";
 import "./contact.css";
 
 export default function Contact() {

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import Button from "../components/ui/Button";
-import { ctaSectionData, ctaFeatures as features } from "../data/data";
+import Button from "../../components/Button/Button";
+import { ctaSectionData, ctaFeatures as features } from "../../data/data";
 import "./cta.css";
 
 const Cta = () => {

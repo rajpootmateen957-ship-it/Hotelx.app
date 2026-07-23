@@ -6,7 +6,7 @@ import {
   productLinks,
   companyLinks,
   bottomLinks,
-} from "../data/data";
+} from "../../data/data";
 import "./footer.css";
 
 export default function Footer() {

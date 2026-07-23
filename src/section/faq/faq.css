@@ -51,7 +51,7 @@
 
 /* ==== Item / card ==== */
 .faq-item {
-  background: linear-gradient(180deg, #ffffff 0%, var(--color-light) 100%);
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-light) 100%);
   border: 1px solid var(--color-border);
   border-radius: 18px;
   padding: 1.5rem 1.75rem;
@@ -71,14 +71,14 @@
 .faq-item:nth-child(7) { animation-delay: 0.47s; }
 
 .faq-item:hover {
-  border-color: #c7d2fe;
+  border-color: var(--color-hex-c7d2fe);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px -18px rgba(15, 23, 42, 0.25);
+  box-shadow: 0 10px 30px -18px var(--color-rgba-15-23-42-0_25);
 }
 
 .faq-item.is-open {
   border-color: var(--color-secondary);
-  box-shadow: 0 16px 36px -18px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 16px 36px -18px var(--color-rgba-99-102-241-0_3);
 }
 
 /* ==== Question row ==== */
@@ -98,7 +98,7 @@
 }
 
 .faq-item.is-open .faq-question-text {
-  color: #1e1b4b;
+  color: var(--color-hex-1e1b4b);
 }
 
 /* ==== Toggle icon ==== */
@@ -110,14 +110,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #475569;
-  background: #f1f5f9;
+  color: var(--color-hex-475569);
+  background: var(--color-hex-f1f5f9);
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease, color 0.3s ease;
 }
 
 .faq-item.is-open .faq-toggle {
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: #ffffff;
+  color: var(--color-white);
   transform: rotate(180deg);
 }
 

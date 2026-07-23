@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { aiSectionData, aiCards as cards } from "../data/data";
+import { aiSectionData, aiCards as cards } from "../../data/data";
 import "./aisection.css";
 
 const AiCard = ({ icon: Icon, title, description, delay }) => {

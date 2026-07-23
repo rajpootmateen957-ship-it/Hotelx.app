@@ -15,13 +15,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 24px;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--color-rgba-255-255-255-0_75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(236, 236, 242, 0.85);
+  border: 1px solid var(--color-rgba-236-236-242-0_85);
   border-radius: 40px;
   padding: 28px 40px;
-  box-shadow: 0 15px 45px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 15px 45px var(--color-rgba-99-102-241-0_15);
 }
 
 .counter-col {
@@ -44,9 +44,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--color-white);
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 6px 16px var(--color-rgba-99-102-241-0_35);
 }
 
 .counter-text {
@@ -57,7 +57,7 @@
 .counter-value {
   font-size: 26px;
   font-weight: 800;
-  color: #14142b;
+  color: var(--color-hex-14142b);
   letter-spacing: -0.5px;
   margin: 0;
   line-height: 1.1;
@@ -66,7 +66,7 @@
 .counter-label {
   font-size: 13px;
   font-weight: 500;
-  color: #6b6b80;
+  color: var(--color-hex-6b6b80);
   margin: 4px 0 0;
   white-space: nowrap;
 }
@@ -74,7 +74,7 @@
 .counter-divider {
   width: 1px;
   height: 42px;
-  background: rgba(20, 20, 43, 0.12);
+  background: var(--color-rgba-20-20-43-0_12);
 }
 
 /* Responsive */

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Minus, Plus } from "lucide-react";
-import { faqData, FAQS } from "../data/data";
+import { faqData, FAQS } from "../../data/data";
 import "./faq.css";
 
 // ---- Component ---------------------------------------------------------
